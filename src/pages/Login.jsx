@@ -70,9 +70,13 @@ export default function Login() {
               <ArrowRight className="h-4 w-4" />
             </button>
 
+            {/* Register Link */}
             <p className="text-center text-sm text-slate-600">
               Pas encore de compte?{" "}
-              <span className="font-medium text-indigo-600 hover:underline cursor-pointer">
+              <span
+                className="font-medium text-indigo-600 hover:underline cursor-pointer"
+                onClick={() => navigate("/register")}
+              >
                 S'inscrire
               </span>
             </p>
